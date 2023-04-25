@@ -1,4 +1,4 @@
-<h1> Quadratica - Gerenciado de Grupos Esportivos <\h1>
+<h1> Quadratica - Gerenciado de Grupos Esportivos
 
 >Status do projeto: Em desenvolvimento
 
