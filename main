@@ -1,0 +1,31 @@
+print('************************************************')
+print('****   Quadrática - Administre sua quadra   ****')
+print('************************************************')
+
+grupo = input("Qual o nome do grupo? \nNome do grupo:")
+modalidade = input('Modalidade:')
+mensalidade_quadra = eval(input('Valor da mensalidade da quadra:'))
+mensalidade_atleta = eval(input(('Valor da mensalidade do atleta')))
+avulso_atleta = eval(input('Valor avulso do atleta:'))
+
+
+
+print("Dados do atleta")
+nome = input('Nome:')
+idade = int(input('Idade:'))
+posicao = input('Posição:')
+estrelas = int(input('Estrelas:'))
+admin = input('Administrador? (s)sim / (n)não :')
+frequencia = input('Mensal ou avulso? (m) mensal / (a) avulso :')
+valor_a_pagar = 0
+if(frequencia.upper() == 'M'):
+    valor_a_pagar = mensalidade_atleta
+else:
+    valor_a_pagar = avulso_atleta
+
+print('Grupo: {}\nModalidade: {}\nMensalidade da quadra: R${}\nNome do atleta: {}\nIdade: {}\n'
+      'Posição: {}\nEstrelas: {}\n Mensal ou avulso? {}\n Valor a pagar: R${}'.format(grupo, modalidade,
+                                                                                     mensalidade_quadra,
+                                                                                      nome, idade, posicao,
+                                                                                      estrelas, frequencia,
+                                                                                      valor_a_pagar))
